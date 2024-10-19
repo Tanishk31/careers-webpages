@@ -49,7 +49,7 @@ const Career = () => {
             variants={fadeInUpDelay}
           >
             Get in Touch with Us! We're here to answer your questions and
-            discuss how we can support your needs.
+            discuss how we can support your and yes needs.
           </motion.p>
         </motion.div>
 
