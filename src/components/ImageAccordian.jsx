@@ -52,10 +52,10 @@ const ImageAccordion = () => {
             />
             {activeIndex === index && (
               <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-white transition-all duration-500">
-                <h3 className="text-2xl mb-2 opacity-100 transition-opacity duration-500">
+                <h3 className="text-2xl mb-2 opacity-100 transition-opacity duration-500 font-bold">
                   Image Accordion Title
                 </h3>
-                <button className="bg-transparent border-2 border-white text-white hover:text-black px-4 py-2 rounded opacity-100 transition-opacity duration-500 hover:bg-white">
+                <button className="bg-transparent border-2 border-white text-white hover:text-black px-4 py-2 rounded-full opacity-100 transition-opacity duration-500 hover:bg-white">
                   Read More
                 </button>
               </div>

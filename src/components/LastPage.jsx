@@ -58,13 +58,14 @@ const LastPage = () => {
         {/* Contact Us Section */}
         <section className="contact-section ">
           <div className="contact-content">
-            <h1 className="heading font-yaro" ref={headerRef}>
+            <h1 className="heading font-yaro text-[56px] font-semibold" ref={headerRef}>
               Contact Us
             </h1>
-            <p ref={para1Ref}>
+            <p ref={para1Ref} className="text-[18px] font-normal">
               Get in touch with us! We're here to answer your questions
             </p>
-            <p ref={para2Ref}>and discuss how we can support your needs.</p>
+            <p ref={para2Ref} className="text-[18px] font-normal">
+              and discuss how we can support your needs.</p>
           </div>
 
           {/* Team Photo */}
@@ -96,10 +97,10 @@ const LastPage = () => {
               className="bg-white p-10 rounded-lg flex-1 flex flex-col justify-between h-full lg:h-[500px] transition-all duration-700"
             >
               <div>
-                <h1 className="text-4xl font-bold text-[#1D3D71] font-yaro mb-6">
+                <h1 className="text-[43px] font-bold text-[#1D3D71] font-yaro mb-6 -mt-12">
                   Contact Us For More Info About Us!
                 </h1>
-                <p className="text-xl text-[#1D3D71] mb-8">
+                <p className="text-[16px] font-medium text-[#1D3D71] mb-8">
                   Vivamus morbi praesentium habitasse voluptatibus ad.
                   Fringilla, adipiscing proident, tristique, et risus aliqua
                   sunt. Maiores cursus fusce nisi pulvinar metus.
@@ -109,29 +110,29 @@ const LastPage = () => {
                 <div className="mb-6 border border-gray-300 p-4 rounded-3xl flex items-center">
                   <FontAwesomeIcon
                     icon={faEnvelope}
-                    className="text-[#1D3D71] text-4xl mr-4"
+                    className="text-[#1D3D71] text-4xl mr-6 ml-5"
                   />
                   <div>
-                    <h2 className="text-2xl font-semibold text-gray-700">
+                    <h2 className="text-[20px] font-bold text-gray-700">
                       Email Address:
                     </h2>
-                    <p className="text-lg text-gray-600">domain@company.com</p>
-                    <p className="text-lg text-gray-600">xyz_info@domain.com</p>
+                    <p className="text-[14px] text-gray-600">domain@company.com</p>
+                    <p className="text-[14px] text-gray-600">xyz_info@domain.com</p>
                   </div>
                 </div>
                 <div className="border border-gray-300 p-4 rounded-3xl flex items-center">
                   <FontAwesomeIcon
                     icon={faPhone}
-                    className="text-[#1D3D71] text-4xl mr-4"
+                    className="text-[#1D3D71] text-4xl mr-6 ml-5"
                   />
                   <div>
-                    <h2 className="text-2xl font-semibold text-gray-700">
+                    <h2 className="text-[20px] font-bold text-gray-700 ">
                       Phone Numbers:
                     </h2>
-                    <p className="text-lg text-gray-600">
+                    <p className="text-[14px] text-gray-600">
                       Telephone No: +81-245-54896
                     </p>
-                    <p className="text-lg text-gray-600">
+                    <p className="text-[14px] text-gray-600">
                       Mobile No: +81-125-87965
                     </p>
                   </div>

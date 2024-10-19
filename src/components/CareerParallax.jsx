@@ -27,13 +27,13 @@ const CareerParallax = () => {
       />
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center mt-10 px-6">
-        <h2 className="text-white text-6xl font-bold mb-4 font-yaro">
+        <h2 className="text-white text-[36px] font-bold mb-4 font-yaro">
           | Career
         </h2>
-        <h3 className="text-white text-4xl font-semibold mb-6">
+        <h3 className="text-white text-[30px] font-bold mb-6">
           Find A Job At Anvey
         </h3>
-        <p className="text-white text-xl mb-8 max-w-2xl">
+        <p className="text-white text-[18px] font-medium mb-8 max-w-2xl">
           Join a dynamic team of experts committed to delivering cutting-edge
           solutions for the oil and gas industry. Grow your career with us and
           be part of a company that drives excellence and transforms the

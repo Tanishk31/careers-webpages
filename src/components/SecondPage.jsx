@@ -74,19 +74,13 @@ const SecondPage = () => {
           animate="visible"
           variants={fadeInUp}
         >
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-4 font-yaro">
+          <h1 className="text-[56px] md:text-6xl font-bold mb-4 font-yaro">
             Our Services
           </h1>
-          <p className="text-lg md:text-2xl mb-6">
+          <p className="text-[18px] font-normal md:text-2xl mb-6">
             Innovative solutions for a sustainable future
           </p>
-          <motion.button
-            className="bg-blue-600 hover:bg-blue-700 transition duration-300 text-lg py-2 px-4 rounded-full shadow-lg"
-            onClick={scrollToServices}
-            whileHover={{ scale: 1.05 }}
-          >
-            Explore Our Services
-          </motion.button>
+          
         </motion.div>
         <div className="wave-container">
           <svg
@@ -110,14 +104,14 @@ const SecondPage = () => {
         animate={servicesInView ? "visible" : "hidden"}
         variants={fadeInDown} // Come from down
       >
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold mb-4 text-center text-[#1D3D71] font-yaro">
             Services
           </h2>
           <p className="text-xl text-center mb-12 text-gray-600">
             Comprehensive services tailored to your needs
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-36">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-50">
             {services.map((service, index) => (
               <motion.div
                 key={index}
@@ -190,10 +184,16 @@ const SecondPage = () => {
             {products.map((product, index) => (
               <motion.div
                 key={index}
-                className="bg-gray-200 p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300"
+                className="bg-[#00B3FF26] p-2 rounded-lg shadow-md hover:shadow-xl transition-all duration-300"
                 whileHover={{ scale: 1.05 }} // Adds a hover effect
                 variants={index % 2 === 0 ? slideFromLeft : slideFromRight}
               >
+                {/* Image added at the top of the card */}
+                <img
+                  src={"/xx.jpeg"}
+                  alt={product.title}
+                  className="w-full h-40 object-cover mb-4 rounded-lg"
+                />
                 <product.icon className="w-16 h-16 mb-4 text-[#1D3D71]" />
                 <h3 className="text-2xl font-semibold mb-2 text-gray-800">
                   {product.title}
@@ -204,6 +204,7 @@ const SecondPage = () => {
           </div>
         </div>
       </motion.section>
+
       {/* Carousel Section */}
       <CarouselComponent /> {/* Add the Carousel component here */}
       {/* Downloads Section */}
@@ -215,7 +216,7 @@ const SecondPage = () => {
         variants={fadeInUp}
       >
         <div className="container mx-auto px-0">
-          <h2 className="text-4xl font-bold mb-8 text-center text-[#1D3D71] font-yaro">
+          <h2 className="text-4xl font-bold mb-8 text-center text-[#1D3D71] font-yaro underline">
             Download
           </h2>
           <div className="flex flex-col md:flex-row">
@@ -228,7 +229,7 @@ const SecondPage = () => {
                 Discover our key achievements and sustainability efforts in 2023
               </p>
               <button className="bg-white text-red-600 px-4 py-2 rounded-lg transition duration-300 hover:bg-gray-100">
-                <Download className="w-5 h-5 inline-block mr-2" />
+                <Download className="w-5 h-5 inline-block mr-2 " />
                 Download
               </button>
             </div>

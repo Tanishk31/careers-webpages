@@ -36,63 +36,63 @@ const queries = [
     id: 1,
     question: "What does Anvey specialize in?",
     answer:
-      "Anvey specializes in innovative tools for the oil and gas industry.",
+      "Anvey specializes in providing innovative engineering solutions for the oil and gas industry, focusing on upstream services. Our product line includes artificial lift systems, wellhead bypass tools, Juggler sand lifters, HymaFRAC packers, and Maglev Linear Motor Drive Plunger Pumps. We design tools that enhance well efficiency, reduce costs, and maximize production.",
   },
   {
     id: 2,
     question: "What is the HymaFRAC packer, and how does it work?",
     answer:
-      "The HymaFRAC packer is a specialized tool used for zonal isolation in hydraulic fracturing operations.",
+      "The HymaFRAC packer is a hydraulic, resettable straddle packer used for multi-stage well stimulation. It's designed for high-pressure operations like hydro-fracturing, water flooding, and acid stimulation. The packer's compact design allows it to be used in both vertical and deviated wells, offering reliable zonal isolation and treatment in tough conditions.",
   },
   {
     id: 3,
     question:
       "How does the Maglev Linear Motor Drive Plunger Pump differ from traditional plunger pumps?",
     answer:
-      "It uses magnetic levitation to operate without friction, making it more efficient.",
+      "The Maglev Linear Motor Drive Plunger Pump uses magnetic levitation to drive the pump, eliminating the need for sucker rods. This rodless design reduces tubing wear, handles sand and heavy crude effortlessly, and increases operational efficiency. It is controlled via surface VFDs and provides real-time well data through downhole sensors, making it a superior alternative to traditional plunger pumps.",
   },
   {
     id: 4,
     question:
       "How do Anvey's artificial lift systems help improve well production?",
     answer:
-      "They increase the flow of oil or gas from the well, enhancing recovery rates.",
+      "Our artificial lift systems, including plunger lifts and gas-assisted plunger lifts, are engineered to optimize well production, particularly in low-pressure or liquid-loading wells. These systems efficiently remove liquids from the wellbore, reducing downtime and improving gas flow rates, thereby enhancing overall well performance.",
   },
   {
     id: 5,
     question: "What makes the Juggler tool unique for wellbore cleanout?",
     answer:
-      "The Juggler tool is unique due to its advanced debris removal technology.",
+      "The Juggler tool is an auto-rotating sand lifter designed to remove sand and debris from the wellbore. It operates using both churning and reciprocation motions, which break down hard debris and lift it efficiently out of the well. It is particularly effective in depleted reservoirs and works in both vertical and deviated wells, providing continuous cleanout without the need for complex equipment.",
   },
   {
     id: 6,
     question: "What are Anvey's core values?",
     answer:
-      "Anvey's core values include innovation, integrity, and customer focus.",
+      "At Anvey, we are driven by\n ● Innovation: We constantly push the boundaries with advanced engineering solutions.● Client-Centric Customization: We provide tailored solutions for every unique well condition.● Operational Efficiency: Our products reduce downtime and improve well performance, saving costs.●  Reliability: Our field-tested tools are designed to perform in the toughest conditions.● Sustainability: We develop energy-efficient tools that minimize environmental impact while maximizing productivity.",
   },
   {
     id: 7,
     question: "How can I apply for a job at Anvey?",
-    answer: "Visit the careers section on our website for job openings.",
+    answer: "You can visit our Careers section on the website to see available positions. If you find a role that suits your skills, fill out our detailed application form, attach your resume, and submit it online. We are always on the lookout for passionate individuals who love the trade and are eager to make a difference in the oil and gas sector.",
   },
   {
     id: 8,
     question: "What is the Wellhead Bypass Tool, and when should it be used?",
     answer:
-      "The Wellhead Bypass Tool is used for bypassing wellheads during critical operations.",
+      "The Wellhead Bypass Tool is used during high-pressure stimulation operations to protect the original wellhead and production valves from damage caused by corrosive fluids and abrasives. It allows operators to perform high-pressure treatments without upgrading the wellhead and is designed for fast installation without the need for a workover rig.",
   },
   {
     id: 9,
     question: "How does Anvey ensure the quality of its products?",
     answer:
-      "Anvey ensures quality through rigorous testing and quality control measures.",
+      "All our products are manufactured under strict quality control programs that meet industry standards. From wellhead bypass tools to complex artificial lift systems, we use high-quality materials and rigorous testing to ensure our tools can handle extreme well conditions. Our commitment to quality translates into longer product life and better performance.",
   },
   {
     id: 10,
     question:
       "What sets Anvey apart from other companies in the oil and gas sector?",
     answer:
-      "Anvey's cutting-edge technology and commitment to innovation sets it apart.",
+      "Anvey stands out due to our ability to provide customized solutions, our commitment to innovation, and our client-focused approach. We design and manufacture tools that are tailored to the specific challenges of each well, ensuring the highest efficiency and reliability. Our team of experienced field professionals is dedicated to delivering outstanding service and support to our clients, ensuring their operations run smoothly and cost-effectively.",
   },
 ];
 
@@ -266,7 +266,7 @@ const HomePage = () => {
           | Our Services
         </h1>
         <EnhancedCarousel />
-        <Link className="mx-auto mb-10 mt-20" to="/services">
+        <Link className="mx-auto mb-10 mt-8" to="/services">
           <button className="text-white bg-blue-400 font-bold px-8 py-3 rounded-full text-lg border border-blue hover:bg-white/20 hover:text-blue-400 hover:border-blue-400 transition-colors duration-300 animate-slideInUp">
             View More
           </button>
@@ -321,20 +321,22 @@ const HomePage = () => {
             Still have doubts? Let's Get In Touch
           </h2>
           <div className="flex justify-center space-x-16">
-            <div className="bg-blue-100 p-4 px-10 rounded-[50px] w-72 shadow-lg shadow-blue-100 text-center ">
+            <div className="bg-blue-100 p-2 px-10 rounded-[50px] w-72 shadow-lg shadow-blue-100 text-center ">
               <FaMapMarkerAlt className="text-3xl text-sky-400 mb-4 mx-auto" />
-              <h3 className="text-xl font-semibold mb-2">Address</h3>
-              <p>Sepco Township Durgapur, WB</p>
+              <h3 className="text-[19px] font-semibold mb-2">Address</h3>
+              <p className="text-[13px] font-normal">15 A 1/3, SEPCO TOWNSHIP, Durgapur, WB-713205
+              </p>
             </div>
-            <div className="bg-blue-100 p-4 px-10 rounded-[50px] w-72 shadow-lg  shadow-blue-100 text-center ">
+            <div className="bg-blue-100 p-6 px-10 rounded-[50px] w-72 shadow-lg  shadow-blue-100 text-center ">
               <FaEnvelope className="text-3xl text-sky-400 mb-4 mx-auto" />
-              <h3 className="text-xl font-semibold mb-2">Email</h3>
-              <p>xyz@anvey.in</p>
+              <h3 className="text-[19px] font-semibold mb-2">Email</h3>
+              <p className="text-[13px] font-normal">Sales@anvey.in
+              </p>
             </div>
-            <div className="bg-blue-100 p-4 px-10 rounded-[50px] w-72 shadow-lg shadow-blue-100 text-center ">
+            <div className="bg-blue-100 p-2 px-10 rounded-[50px] w-72 shadow-lg shadow-blue-100 text-center ">
               <FaPhoneAlt className="text-3xl text-sky-400 mb-4 mx-auto" />
-              <h3 className="text-xl font-semibold mb-2">Phone</h3>
-              <p>+91 99999 99999</p>
+              <h3 className="text-[19px] font-semibold mb-2">Phone</h3>
+              <p className="text-[13px] font-normal">+917060060039/ +917300534848</p>
             </div>
           </div>
         </div>
